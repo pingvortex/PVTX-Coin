@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback-secrejzthrdfgghsdfj53ijlt-key')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback-secret-key')
 DATABASE = 'pvtxc.db'
 
 logging.basicConfig(level=logging.INFO)
